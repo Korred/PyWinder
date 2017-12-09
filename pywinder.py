@@ -29,7 +29,7 @@ for i in range(REPETITIONS):
     left = ["X{:.2f} Y{:.2f}".format(travel_x, travel_y),
             "Y{:.2f}".format(extra)]
 
-    right = ["X{:.2f} Y{:.2f}".format(0, travel_y),
+    right = ["X{:.2f} Y{:.2f}".format(OFFSET_LEFT, travel_y),
             "Y{:.2f}".format(extra)]
     
     GCODE.extend(left)
