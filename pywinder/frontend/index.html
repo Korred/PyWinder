@@ -1,0 +1,136 @@
+<!doctype html>
+<html ng-app="PyWinderApp" class="no-js" lang="">
+<!-- HEAD with META/STYLESHEETS/SCRIPTS -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="theme-color" content="#ba3f68" />
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Base information for HTML5 Mode, which removes #! (hash-bang) from the APP URL ### -->
+    <base href="/">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="static/css/normalize.min.css">
+    <link rel="stylesheet" href="static/css/bulma.css">
+    <link rel="stylesheet" href="static/css/loaders.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+
+    <script src="static/js/vendor/angular.js"></script>
+
+    <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="static/js/vendor/angular-ui-router.js"></script>
+    <script src="static/js/vendor/angular-resource.min.js"></script>
+
+    <script src="static/js/vendor/angular-jwt.min.js"></script>
+    <script src="static/js/vendor/angular-storage.js"></script>
+    <script src="static/js/vendor/angular-animate.min.js"></script>
+    <script src="static/js/vendor/angular-sanitize.min.js"></script>
+    <script src="static/js/vendor/angular-loaders.js"></script>
+
+    <script src="static/js/vendor/fontawesome-all.min.js"></script>
+
+
+    <script src="static/angular_assets/app.module.js"></script>
+    <script src="static/angular_assets/app.config.js"></script>
+
+    <!--ng-Assets that should be minified and joined for production env-->
+
+    <!-- CORE assets/services ###################################################################### -->
+    <!-- Defines communication with REST-API (DRF) -->
+    <script src="static/angular_assets/core/core.module.js"></script>
+
+
+    <!-- MAIN MENU assets -->
+    <script src="static/angular_assets/menu/menu.module.js"></script>
+    <script src="static/angular_assets/menu/menu.component.js"></script>
+
+    <!-- MAIN NAV assets -->
+    <script src="static/angular_assets/main_nav/main_nav.module.js"></script>
+    <script src="static/angular_assets/main_nav/main_nav.component.js"></script>
+
+    
+
+</head>
+
+<body class="Site appbg">
+    <header></header>
+
+    <main class="Site-content is-fullwidth flex-container ">
+
+        <div class="container" style="flex-basis: 100%">
+
+            <!-- Pages are injected here -->
+            <div ui-view class="columns" style="margin-top: 0px; padding-top: 20px;">
+
+            </div>
+
+        </div>
+
+    </main>
+
+<footer class="Site-footer">
+    <div class="container" style="font-size: 13px;">
+        <div class="content has-text-centered" >
+
+                <div class="columns fnt_white" style="margin-bottom: 0px">
+                    <div class="column" style="padding-bottom: 0px;">
+                        <strong class="fnt_white">PyWinder</strong> | &copy; 2018 
+                    </div>
+                </div>
+
+
+                <div class="columns fnt_white" style="margin-bottom: 0px">
+                <div class="column">
+                        <span>
+                                Powered by 
+                        </span>
+                        
+                        <span class="icon footer-icon">
+                            <i class="fab fa-python "></i>
+                          </span>
+                          <span class="icon footer-icon">
+                            <i class="fab fa-html5"></i>
+                          </span>
+                          <span class="icon footer-icon">
+                            <i class="fab fa-js"></i>
+                          </span>
+                          <span>
+                                and
+                          </span>
+                          
+                          <span class="icon footer-icon">
+                            <i class="fas fa-heart"></i>
+                          </span>
+                        </div>
+                    </div>
+
+
+        </div>
+    </div>
+</footer>
+
+    <!--########################################################################-->
+    <!-- JAVASCRIPT DATEIEN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="static/js/plugins.js"></script>
+
+    <script>
+// Add the CSRF Token
+var app = angular.module('PyWinderApp'); // Not including a list of dependent modules (2nd parameter to `module`) "re-opens" the module for additional configuration
+app.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.headers.common['X-CSRFToken'] = '{{ csrf_token|escapejs }}';
+}]);
+</script>
+
+</body>

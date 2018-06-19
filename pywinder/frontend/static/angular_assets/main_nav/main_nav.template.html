@@ -1,0 +1,282 @@
+<!--
+
+ <p class="subtitle is-5 fnt_black" style="text-align: center;">Hauptmenü</p>
+ <div class="block" style="margin-bottom: 0px;">
+
+    <button class="button mm_button" ui-sref="menu.profile">
+        <span class="icon fa_span">
+            <i class="fa fa-id-card-o fa_icon"></i>
+            <p>Profil</p>    
+        </span>     
+    </button>
+        
+    <button class="button mm_button" ui-sref="menu.aerzte">
+        <span class="icon fa_span">
+            <i class="fa fa-user-md  fa_icon"></i>
+            <p>Ärzte</p>   
+        </span>
+              
+    </button>
+
+    <button class="button mm_button" ui-sref="menu.patienten">
+        <span class="icon fa_span">
+            <i class="fa fa-address-book-o fa_icon"></i>
+            <p>Patienten</p>   
+        </span>
+        
+    </button>
+
+    <button class="button mm_button" ui-sref="menu.mitarbeiter">
+        <span class="icon fa_span">
+            <i class="fa fa-users fa_icon"></i>
+            <p>Mitarbeiter</p>   
+        </span>
+        
+    </button>
+</div>  
+
+<hr>
+
+-->
+<div class="change_forms">
+        <div class="block" style="text-align: center">
+                <figure class="image" >
+                        <img src="static/images/winder.png" style="width:600px;display: inline-flex;">
+                </figure>
+        </div> 
+        <hr>
+        <p class="subtitle is-5 fnt_black" style="text-align: left;">Filament</p>
+        <hr>
+        <div class="block">
+            <!-- FILAMENT WIDTH-->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Filament-Width</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g. " style="width:20%">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- FILAMENT THICKNESS-->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Filament-Thickness</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g. " style="width:20%">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+
+        </div>
+        <hr>
+        <p class="subtitle is-5 fnt_black" style="text-align: left;">Form</p>
+        <hr>
+        <div class="block">          
+            
+            <!-- TUBE WIDTH -->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Tube-Width</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g." style="width:20%" disabled>
+                        </div>
+                        <p class="help is-information change_forms">Automatically calculated based on provided Form-Width and offsets</p>
+                    </div>
+                </div>
+            </div> 
+        
+
+            <!-- FORM WIDTH -->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Form-Width</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g." style="width:20%">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <!-- OFFSET_LEFT -->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Offset (left)</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow" style="margin-right: 3rem;">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g.">
+                        </div>
+                    </div>
+                    <div class="field-label is-normal" style="flex-basis: 50px">
+                        <label class="label">Offset (right)</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field is-narrow">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+ 
+            <!-- SWITCH_OFFSET_LEFT -->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Switch-Offset (left)</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow" style="margin-right: 3rem;">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g.">
+                        </div>
+                    </div>
+                    <div class="field-label is-normal" style="flex-basis: 50px">
+                        <label class="label">Switch-Offset (right)</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field is-narrow">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- RADIUS -->
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Radius</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g. " style="width:20%">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+
+            <hr>
+            <p class="subtitle is-5 fnt_black" style="text-align: left;">Layers</p>
+            <hr>
+
+            <table class="table yellow-is-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Winding Angle (deg)</th>
+                    <th>Feedrate (mm/s)</th>
+                    <th>Repetition</th>
+                    <th>Passes</th>
+                    <th>Length (m)</th>
+                    <th></th>
+                  </tr>
+                </thead>
+      
+                <tfoot>
+                  
+                </tfoot>
+      
+                <tbody>
+                  <!--- Beispiel Einträge -->
+                  <tr ng-repeat="p in $ctrl.positions">
+                    <td>
+                        <span>{{p.id}}</span>
+                    </td>
+                    <td>
+                        <input ng-model="p.angle" class="input" type="text" placeholder="eg. 45" ng-change="">
+                    </td>
+                    <td>
+                        <input ng-model="p.feedrate" class="input" type="text" placeholder="eg. 2000" ng-change="">
+                    </td>
+                    <td>
+                        <input ng-model="p.reps" class="input" type="text" placeholder="" ng-change="">
+                    </td>
+                    <td>
+                        <input ng-model="p.passes" class="input" type="text" placeholder="eg. 2000" ng-change="" disabled>
+                    </td>
+                    <td>
+                        <input ng-model="p.len" class="input" type="text" placeholder="eg. 2000" ng-change="" disabled>
+                    </td>
+      
+                    <td>
+                    <button ng-click="$ctrl.removePosition(p.id)" class="button yellow_button is-outlined">
+                        <span class="icon is-small">
+                          <i class="fa fa-minus-square"></i>
+                        </span>
+                      </button>
+                    </td>
+      
+                  </tr>                  
+      
+      
+                </tbody>
+      
+            </table>
+        
+            <!-- Add Button -->
+            <nav class="level">
+                
+                    <!-- Left side -->
+                    <div class="level-left">
+                    <div class="level-item"></div>
+                    </div>
+                    
+                    <div class="level-right" style="margin-top: 0px;">
+                    <div class="level-item">
+                        <div class="field has-addons">
+    
+                        <p class="control">
+                            <button ng-click="$ctrl.addNewPosition()" class="button yellow_button is-outlined">
+                            <span class="icon">
+                                <i class="fa fa-plus-square"></i>
+                            </span>
+                            <span>Add Layer</span>
+                            </button>
+                        </p>
+    
+                        </div>
+                    </div>
+                    </div>
+                                
+                </nav>
+
+       
+        
+        <hr style="margin-bottom: 0px;">
+        <div class="block">
+          <p class="field back-button">
+            <button class="button yellow_button bottom-buttons" ui-sref="">
+              <span class="icon">
+                <i class="fab fa-whmcs"></i>
+              </span>
+              <span style="padding-bottom: 3px;">Create G-code</span>
+            </button>
+          </p>
+        </div>
+</div>
+
+
